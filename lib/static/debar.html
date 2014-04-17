@@ -1,0 +1,19 @@
+<!-- Navigation -->
+<nav id="slide-menu">
+	<div id='debar' class='debar'></div>
+</nav>
+<!-- Content panel -->
+<div id="content">
+	<div class="menu-trigger"></div>	
+</div>
+
+<script id="debarTemplate" type="text/html">
+	<div class='debar-container'>
+		<div class='debar-routes'>				
+			{{#list application.routes}}<div class='name'>{{name}}</div> <div class='duration'>{{duration}}</div>{{/list}}			
+		</div>		
+		<div class='debar-middleware'>				
+			{{#list application.middleware}}<div class='name'>{{name}}</div> <div class='duration'>{{duration}}</div>{{/list}}
+		</div>
+	</div>
+</script>
